@@ -16,7 +16,8 @@ error_log = base_dir + "error.log"
 lock_file = base_dir + "lf.lock"
 
 # Debug
-SetPrintConsole(True)
+debugging = os.environ['CLOUDNS_API_DEBUG'] == "True"
+SetPrintConsole(debugging)
 call_api = True
 
 def Main():
