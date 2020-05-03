@@ -3,7 +3,7 @@ import time
 from dnslib import RR, QTYPE, SOA, DNSLabel, CLASS
 from utils_debugging import Echo
 
-bind_path = "/var/named/chroot/var/"
+bind_path = os.environ['BIND_NAMED_PATH']
 retry_sleep = 0.5
 retry_times = 5
 

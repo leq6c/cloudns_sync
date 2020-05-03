@@ -46,5 +46,3 @@ def Copy(f, src, dst):
 	src = os.path.join(src, f)
 	dst = os.path.join(dst, f)
 	shutil.copyfile(src, dst)
-
-GetDiffs("/var/named/chroot/var/", "local_named_repo/")
