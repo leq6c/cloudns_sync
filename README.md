@@ -18,3 +18,7 @@ export SYNC_AFTER_SECONDS=15
 
 python3 main.py 
 ```
+
+# Scheduling ways
+- cron
+- EventManager (plesk)
