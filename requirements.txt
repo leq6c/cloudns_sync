@@ -1,0 +1,5 @@
+dnspython==1.16.0
+zonefile==0.1.1
+blockstack-zones-py3==0.19.0.0
+dnslib==0.9.12
+cloudns_api==0.8
