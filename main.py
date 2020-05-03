@@ -15,12 +15,16 @@ normal_log = base_dir + "main.log"
 error_log = base_dir + "error.log"
 lock_file = base_dir + "lf.lock"
 
+# VARS
+sync_after = int(os.environ['SYNC_AFTER_SECONDS'])
+
 # Debug
 debugging = os.environ['CLOUDNS_API_DEBUG'] == "True"
 SetPrintConsole(debugging)
 call_api = True
 
 def Main():
+	time.sleep(sync_after)
 	# CREATE DIR
 	os.makedirs(base_dir, exist_ok=True)
 
